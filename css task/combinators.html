@@ -1,0 +1,75 @@
+Add a Css stylings using combinator selectors , for paragraph and span tags 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Combinators </title>
+  <style>
+    .outer > div{ 
+         background-color: bisque;
+        }  /*direct child*/
+
+
+    .outer article{
+        background-color: rgb(34, 135, 236);
+    }  /*inditrect child*/
+
+    
+    p+span{
+        font-size: 50px;
+    }      /*Adjacent siblings  */
+
+    article ~ p{
+        background: red;
+        font-style: oblique;
+        font-size: 30px;
+    }   /*general siblings  */
+    .outer p{
+        background-color: chartreuse;
+    }   /*direct child  */
+    article > p{
+        text-align: center;
+        font-weight: bold;
+        font-family: fantasy;
+        font-size: 50px;
+    }  /*direct child  */
+
+    p ~ span{
+        background: rgb(141, 4, 81);
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <section class="outer">
+    <div class="middle">
+      <article class="weird">
+        <p>Paragraph 1</p>
+        <span>Span in article</span>
+      </article>
+      <p>Paragraph 2</p>
+      <span>Span in middle</span>
+      <div>
+        <p>Nested Paragraph 3</p>
+      </div>
+    </div>
+    <p>Paragraph 4</p>
+    <span>Span in outer</span>
+  </section>
+
+  <article>
+    <p>Paragraph 5</p>
+  </article>
+
+  <p>Paragraph 6</p>
+
+</body>
+</html>
+
+
+
+
+
