@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model task</title>
+
+    <style>
+        .parent{
+            width: 100%;
+            margin-left: 550px;
+        }
+        .child{
+            display:inline-block;
+            width: 20%;
+            padding: 20px;
+        }
+        img{
+            width: 100%;
+        }
+        .sub{
+            margin-left: 1020px;
+        }
+        .sub>img{
+            height: 40%;
+            width: 60%;
+        }
+        .sub>h1{
+            padding-left: 35%;
+        }
+
+
+        .boxes{
+            text-align: center;   /* centers the children horizontally */
+            margin-top: 100px;
+           padding-left: 500px;
+        }
+
+        .boxes .no{
+            display: inline-block;
+            padding-top: 50px;
+            text-align: center;
+            background-color: rgb(185, 223, 239);
+            height: 150px;
+            width:200px;
+            font-size: 60px;
+            border: 2px solid black;  
+            box-sizing: border-box;
+        }
+        .footer{
+            width: 100%;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .fc{
+            display: inline-block;
+            width: 20%;
+            vertical-align: top;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: left;
+        }
+        .f21  img{
+            height: 100px;
+            width: 150px;
+        }
+        
+        .f21 p {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0;
+        }
+
+        .pt {
+            display: inline-block;
+            padding: 5px 10px;
+            text-align: center;
+            background-color: rgb(227, 225, 169);
+            
+            font-size: 60px;
+            border: 2px solid black;  
+            box-sizing: border-box;
+            margin: 4px;
+        }
+
+        .fc .h2{
+            padding-bottom: 10px;
+        }
+        .f21 .p{
+            display: inline;
+        }
+        body{
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="img1">
+            <h2>Let Me Tell You About This Steak</h2>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="child">
+            <img src="https://www.w3schools.com/w3images/steak.jpg" alt="img2">
+            <h2>Let Me Tell You About This Steak</h2>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="child">
+            <img src="https://www.w3schools.com/w3images/cherries.jpg" alt="img3">
+            <h2>Let Me Tell You About This Steak</h2>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="child">
+            <img src="https://www.w3schools.com/w3images/wine.jpg" alt="img4">
+            <h2>Let Me Tell You About This Steak</h2>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>   <!-- 1st line 4 items -->
+    </div>
+    <div class="parent">
+        <div class="child">
+            <img src="https://www.w3schools.com/w3images/popsicle.jpg" alt="img5">
+            <h2>All I Need Is a Popsicle</h2>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="child">
+            <img src="https://www.w3schools.com/w3images/salmon.jpg" alt="img6">
+            <h2>Salmon For Your Skin</h2>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="child">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="img7">
+            <h2>Let Me Tell You About</h2>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="child">
+            <img src="https://www.w3schools.com/w3images/croissant.jpg" alt="img8">
+            <h2>Le French</h2>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div> 
+    </div>  <!-- 2st line 4 items -->
+
+    <div class="boxes">
+        <div class="no"><<</div>
+        <div class="no">1</div>
+        <div class="no">2</div>
+        <div class="no">3</div>
+        <div class="no">4</div>
+        <div class="no">>></div>
+    </div>
+
+    <div class="sub">
+        <h1>ABOUT ME</h1>
+        <img src="https://www.w3schools.com/w3images/chef.jpg" alt="img9" style="padding-left: 20m0px;" >
+        <p style="padding-left:700px ;">I am Who I Am!</p>
+        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    </div>
+
+
+    <div class="footer">
+        <div class="fc">
+            <h2>FOOTER</h2>
+            <P>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</P>
+        </div>
+        <div class="fc">
+            <h1>BLOG POSTS</h1>
+            <div class="f21">
+                <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="img10">
+                <p>Lorem <br> Sed mattis nunc</p>
+            </div>
+            <div class="f21">
+                <img src="https://www.w3schools.com/w3images/gondol.jpg" alt="img11">
+                <p>Ipsum <br> Praes tinci sed</p>
+            </div>
+        </div>
+        <div class="fc">
+            <h1>POPULAR TAGS</h1>
+            <div class="pt">Travel</div>
+            <div class="pt">New York</div>
+            <div class="pt">Dinner</div>
+            <div class="pt">Salmon</div>
+            <div class="pt">France</div>
+            <div class="pt">Drinks</div>
+            <div class="pt">Ideas</div>
+            <div class="pt">Flavours</div>
+            <div class="pt">Cuisine</div>
+            <div class="pt">Chicken</div>
+        </div>
+    </div>
+
+</body>
+</html>
